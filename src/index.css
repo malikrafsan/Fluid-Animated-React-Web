@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand";
+  box-sizing: border-box;
+  /* word-wrap: break-word; */
+  word-break: keep-all;
+  white-space: normal;
+  font-weight: bold;
+  line-height: 1.5;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* background-color: #52006A; */
+  background-color: #072ac8;
+}
+
+.navbar {
+  /* background-color: #FFA900; */
+  background-color: #ffc600;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 12vh;
+  z-index: 1;
+  border-bottom: 3px solid black;
+}
+.navbar-btn {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  /* background-color: #CD113B; */
+  background-color: #1e96fc;
+  color: white;
+  padding: 1% 1% 2.5%;
+  margin: auto;
+  border: none;
+  height: 50%;
+  min-width: 80px;
+  border-radius: 2.5vh;
+  font-size: 1.1rem;
+  box-shadow: 5px 5px black;
+  transition: 0.5s;
+}
+.navbar-btn:hover {
+  cursor: pointer;
+  transform: translateX(2px) translateY(2px);
+  box-shadow: 3px 3px black;
+}
+
+.clearer {
+  width: 100%;
+  height: 30vh;
+  /* background-color: grey; */
+}
+
+.title {
+  color: white;
+  text-align: center;
+  height: 70vh;
+}
+/* .title-text-container {
+  margin: 25vh;
+} */
+.title h1, h2 {
+  margin: 2%;
+}
+.title .gift-icon {
+  font-size: 8rem;
+}
+
+.card {
+  padding: 5%;
+  margin: 5% 0;
+}
+.page {
+  height: 100vh;
+  width: 100%;
+  /* background-color: rgba(255,255,255,0.1); */
+}
+.letter-container {
+  max-width: 500px;
+  /* background-color: #FFA900; */
+  background-color: #fcf300;
+  margin: auto;
+  padding: 2% 2% 1%;
+  border-radius: 4vh;
+  border-right: 7px solid #FF7600;
+  border-bottom: 7px solid #FF7600;
+  /* text-align: justify; */
+}
+.text-container {
+  background-color: white;
+  color: black;
+  padding: 4%;
+  border-radius: 4vh;
+  border: 2px solid black;
+}
+.counter-btn {
+  display: block;
+  margin: 4% auto 0;
+  /* background-color: #CD113B; */
+  background-color: #a2d6f9;
+  min-width: 50px;
+  min-height: 50px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 4px 4px;
+}
+.counter-btn:hover {
+  cursor: pointer;
+  transform: translateX(2px) translateY(2px);
+  box-shadow: 3px 3px black;
+}
+
+.last {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.last h2 {
+  margin: 3%;
+}
+.answer-btn {
+  padding: 2% 3%;
+  /* background-color: #CD113B; */
+  background-color: #1e96fc;
+  color: white;
+  border: none;
+  border-radius: 2vh;
+  margin: 2%;
+  font-size: 1.25em;
+  box-shadow: 5px 5px black;
+  transition: 0.5s;
+}
+.answer-btn:hover {
+  cursor: pointer;
+  transform: translateX(2px) translateY(2px) !important;
+  box-shadow: 3px 3px black;
+}
+.last .info {
+  background-color: white;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 3vh;
+  border: 2px solid black;
+}
+.last label {
+  margin: 2%;
+  display: block;
+}
+.last .hidden {
+  display: none;
+}
+label input, label textarea {
+  margin: 1%;
+  display: inline-block;
+  width: 100%;
+  padding: 2%;
+  border: 2px solid black;
+  border-radius: 2vh;
+}
+label textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+.btn-mail {
+  width: 35% !important;
+  margin: 3% auto 2%;
+  text-align: center;
+  font-size: 16px;
+  /* word-wrap: break-word; */
+}
+.info {
+  margin: 5% auto;
+  width: 95%;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 2%;
+  background-color: white;
+}
+.info p{
+  color: black;
+}
+.fill-answer {
+  margin: 5% auto;
+  width: 95%;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 2%;
+  background-color: #ffc600;
+}
+.fill-answer h3{
+  padding: 2%;
+}
+.fill-answer input,textarea {
+  width: 100%;
+  padding: 2%;
+  border-radius: 12px;
+}
+.fill-answer textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+.option-answer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s;
+}
+.option-btn {
+  padding: 0.5rem;
+  border: 2px solid #e5dc15;
+  border-radius: 0.5rem;
+  margin: 0 3%;
+}
+.option-btn:hover {
+  cursor: pointer;
+  background-color: #FFAA4C;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+.grey {
+  background-color: grey;
+}
+@media screen and (max-width: 500px) {
+  .btn-mail {
+    width: 50% !important;
+  }
+}
+@media screen and (max-width: 350px){
+  .btn-mail {
+    width: 60% !important;
+  }
+}
